@@ -2,11 +2,12 @@
   "name": "indianwonders-columbustravels",
   "version": "2.0.0",
   "description": "Indian Wonders - A Division of Columbus Travels & Services Pvt. Ltd. (Est. 1984 | Approved by Dept. of Tourism, Govt. of India | IATA Accredited)",
+  "private": true,
   "scripts": {
-    "start": "node local-server.js",
-    "dev": "node local-server.js"
+    "dev": "node local-server.js",
+    "serve": "node local-server.js"
   },
-  "dependencies": {
+  "devDependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2"
   },
@@ -16,8 +17,7 @@
     "columbus-travels",
     "indian-wonders",
     "homestays",
-    "cruises",
-    "express"
+    "cruises"
   ],
   "author": "Columbus Travels & Services Pvt. Ltd.",
   "license": "ISC"
