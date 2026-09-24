@@ -3,8 +3,8 @@
   "version": "2.0.0",
   "description": "Indian Wonders - A Division of Columbus Travels & Services Pvt. Ltd. (Est. 1984 | Approved by Dept. of Tourism, Govt. of India | IATA Accredited)",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "start": "node local-server.js",
+    "dev": "node local-server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
