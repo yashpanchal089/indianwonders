@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bespoke Trip Architect | Customised Packages | Columbus Travels & Indian Wonders</title>
+  <meta name="description" content="Design your tailor-made luxury tour, haveli homestay, or cruise package. Real-time cost estimates and personal travel architecture by Columbus Travels & Services Pvt. Ltd. (Est. 1984).">
+  
+  <!-- Google Fonts: Epilogue, Syne, Plus Jakarta Sans & Playfair Display (Awwwards Style) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Trust Bar -->
+  <aside class="top-trust-bar">
+    <div class="container">
+      <div class="trust-badges-group">
+        <div class="trust-item">
+          <i class="fa-solid fa-award"></i>
+          <span>IATA Accredited Passenger Sales Agent</span>
+        </div>
+        <div class="trust-item">
+          <i class="fa-solid fa-landmark"></i>
+          <span>Approved by Dept. of Tourism, Govt. of India</span>
+        </div>
+        <div class="trust-item">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <span>Serving Discerning Travelers Since 1984</span>
+        </div>
+      </div>
+
+      <div class="currency-contact-group">
+        <div class="currency-selector-wrap">
+          <label for="currencySelect"><i class="fa-solid fa-coins"></i> Currency:</label>
+          <select id="currencySelect" class="currency-select" aria-label="Select Currency">
+            <option value="INR" selected>INR (₹)</option>
+            <option value="USD">USD ($)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="GBP">GBP (£)</option>
+          </select>
+        </div>
+        <a href="tel:+912228086789" class="trust-contact-link">
+          <i class="fa-solid fa-phone"></i> +91 22 2808 6789
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header with Dual Logos & Dropdown with Arrow -->
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-identity" aria-label="Indian Wonders & Columbus Travels Home">
+          <div class="brand-badge-container">
+            <div class="brand-logo-primary-wrap">
+              <img src="assets/images/indian-wonders-logo.png" alt="Indian Wonders" class="brand-logo-main">
+            </div>
+            <div class="brand-emblem-divider">
+              <span class="divider-line"></span>
+              <span class="divider-star"><i class="fa-solid fa-diamond"></i></span>
+              <span class="divider-line-bottom"></span>
+            </div>
+            <div class="brand-logo-secondary-wrap">
+              <img src="assets/images/columbus-travels-logo.png" alt="Columbus Travels Since 1984 - Approved by Dept. of Tourism, Govt. of India" class="brand-logo-sub">
+            </div>
+          </div>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          
+          <li class="nav-item">
+            <a href="packages.html" class="nav-link">
+              Packages <i class="fa-solid fa-chevron-down nav-arrow"></i>
+            </a>
+            <div class="nav-dropdown">
+              <a href="packages.html?category=tour" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-earth-asia"></i></div>
+                <div>
+                  <span class="dropdown-text-title">Tour Packages</span>
+                  <span class="dropdown-text-desc">Cultural, Culinary & Wildlife Trails</span>
+                </div>
+              </a>
+              <a href="packages.html?category=customised" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-sliders"></i></div>
+                <div>
+                  <span class="dropdown-text-title">Customised Packages</span>
+                  <span class="dropdown-text-desc">100% Tailor-made Bespoke Routes</span>
+                </div>
+              </a>
+              <a href="packages.html?category=homestay" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-house-chimney-window"></i></div>
+                <div>
+                  <span class="dropdown-text-title">Home Stay Packages</span>
+                  <span class="dropdown-text-desc">472-Yr Havelis & Planter Bungalows</span>
+                </div>
+              </a>
+              <a href="packages.html?category=cruise" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-ship"></i></div>
+                <div>
+                  <span class="dropdown-text-title">Cruise Packages</span>
+                  <span class="dropdown-text-desc">Alaska Oceans & Backwater Charters</span>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-item"><a href="custom-tour.html" class="nav-link active">Trip Architect</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Specialized Services</a></li>
+          <li class="nav-item"><a href="services.html#legacy" class="nav-link">Our 1984 Legacy</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="custom-tour.html" class="btn-nav-bespoke">
+            <i class="fa-solid fa-compass nav-btn-icon"></i>
+            <span>Plan Bespoke Journey</span>
+          </a>
+          <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero Banner -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="page-breadcrumbs">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Bespoke Trip Architect</span>
+        </div>
+        <h1 class="page-hero-title">
+          Architect Your <span class="highlight-gold">Custom Journey</span>
+        </h1>
+        <p class="page-hero-desc">
+          Craft your own private schedule. Select destinations, preferred stays (ancestral havelis, luxury palaces, or cruise staterooms), and receive an instant blueprint with live estimated quotation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trip Architect Multi-Step Wizard Engine -->
+  <main class="architect-section" style="padding: 56px 0 80px;">
+    <div class="container">
+      
+      <div class="architect-layout">
+        
+        <!-- Left Wizard Column -->
+        <div class="architect-wizard-card">
+          
+          <!-- Steps Navigation Header -->
+          <div class="wizard-steps-header">
+            <div class="wizard-step-node active" id="node-step-1" data-step="1">
+              <div class="step-num">1</div>
+              <div class="step-title">Destination</div>
+            </div>
+            <div class="wizard-step-node" id="node-step-2" data-step="2">
+              <div class="step-num">2</div>
+              <div class="step-title">Travel Style</div>
+            </div>
+            <div class="wizard-step-node" id="node-step-3" data-step="3">
+              <div class="step-num">3</div>
+              <div class="step-title">Stay & Tier</div>
+            </div>
+            <div class="wizard-step-node" id="node-step-4" data-step="4">
+              <div class="step-num">4</div>
+              <div class="step-title">Party & Month</div>
+            </div>
+            <div class="wizard-step-node" id="node-step-5" data-step="5">
+              <div class="step-num">5</div>
+              <div class="step-title">Blueprint & Submit</div>
+            </div>
+          </div>
+
+          <!-- Wizard Body: Step Panels -->
+          <div class="wizard-body" id="wizardStepsContainer">
+            
+            <!-- STEP 1: DESTINATION -->
+            <div class="wizard-pane active" id="wizardStep1">
+              <h3 class="wizard-pane-title">Where would you like to journey?</h3>
+              <p class="wizard-pane-desc">Select primary region of focus. Our architects can link multiple circuits seamlessly.</p>
+              
+              <div class="wizard-options-grid">
+                <div class="wizard-option-card selected" data-value="Royal Rajasthan & Deserts" data-base="125000">
+                  <div class="option-icon"><i class="fa-solid fa-chess-rook"></i></div>
+                  <div class="option-title">Royal Rajasthan & Deserts</div>
+                  <div class="option-desc">Jaipur, Jodhpur Havelis, Jaisalmer Dunes & Udaipur Lake Palaces.</div>
+                </div>
+
+                <div class="wizard-option-card" data-value="South India & Kerala Backwaters" data-base="98000">
+                  <div class="option-icon"><i class="fa-solid fa-water"></i></div>
+                  <div class="option-title">South India & Kerala Backwaters</div>
+                  <div class="option-desc">Private Houseboats, Munnar Tea Valleys & Coorg Coffee Estates.</div>
+                </div>
+
+                <div class="wizard-option-card" data-value="Himalayas & Spiritual Ganges" data-base="115000">
+                  <div class="option-icon"><i class="fa-solid fa-mountain-sun"></i></div>
+                  <div class="option-title">Himalayas & Spiritual Ganges</div>
+                  <div class="option-desc">Rishikesh Yoga Retreats, Haridwar Aarti & High Mountain Passes.</div>
+                </div>
+
+                <div class="wizard-option-card" data-value="Golden Triangle & Heritage" data-base="85000">
+                  <div class="option-icon"><i class="fa-solid fa-archway"></i></div>
+                  <div class="option-title">Golden Triangle & Taj Mahal</div>
+                  <div class="option-desc">Imperial Citadels of Delhi, Sunrise at Taj Mahal & Pink City.</div>
+                </div>
+
+                <div class="wizard-option-card" data-value="Alaska & International Ocean Cruises" data-base="245000">
+                  <div class="option-icon"><i class="fa-solid fa-ship"></i></div>
+                  <div class="option-title">Alaska & International Expeditions</div>
+                  <div class="option-desc">Glacier Bay Luxury Balcony Cruising & Wonders of Jordan Petra.</div>
+                </div>
+
+                <div class="wizard-option-card" data-value="Central Wildlife & Tiger Reserves" data-base="140000">
+                  <div class="option-icon"><i class="fa-solid fa-paw"></i></div>
+                  <div class="option-title">Central India Tiger Reserves</div>
+                  <div class="option-desc">Ranthambore, Bandhavgarh & Kanha Luxury Wilderness Safari Lodges.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 2: TRAVEL STYLE -->
+            <div class="wizard-pane" id="wizardStep2">
+              <h3 class="wizard-pane-title">Choose Your Travel Mood & Focus</h3>
+              <p class="wizard-pane-desc">We tailor the rhythm, dining experiences, and private guides accordingly.</p>
+
+              <div class="wizard-options-grid">
+                <div class="wizard-option-card selected" data-value="Royal Heritage & Palaces" data-multiplier="1.15">
+                  <div class="option-icon"><i class="fa-solid fa-crown"></i></div>
+                  <div class="option-title">Royal Heritage & Palaces</div>
+                  <div class="option-desc">Private museum walkthroughs, royal court dinners & architectural historians.</div>
+                </div>
+
+                <div class="wizard-option-card" data-value="Living Homestay & Noble Havelis" data-multiplier="1.0">
+                  <div class="option-icon"><i class="fa-solid fa-house-chimney-window"></i></div>
+                  <div class="option-title">Living Homestay & Noble Havelis</div>
+                  <div class="option-desc">Stay with noble families, Marwari and Kodava culinary secrets & courtyards.</div>
+                </div>
+
+                <div class="wizard-option-card" data-value="Culinary Safari & Wine Pairings" data-multiplier="1.1">
+                  <div class="option-icon"><i class="fa-solid fa-utensils"></i></div>
+                  <div class="option-title">Culinary Safari & Gastronomy</div>
+                  <div class="option-desc">Spice market walks, chef-guided masterclasses & authentic regional feasts.</div>
+                </div>
+
+                <div class="wizard-option-card" data-value="Luxury Cruise & Houseboat Charter" data-multiplier="1.2">
+                  <div class="option-icon"><i class="fa-solid fa-sailboat"></i></div>
+                  <div class="option-title">Luxury Cruise & Houseboat</div>
+                  <div class="option-desc">Private crewed backwater kettuvallams or oceanfront stateroom balconies.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 3: ACCOMMODATION TIER -->
+            <div class="wizard-pane" id="wizardStep3">
+              <h3 class="wizard-pane-title">Preferred Accommodation Standard</h3>
+              <p class="wizard-pane-desc">All Columbus Travels verified properties uphold strict luxury hospitality standards.</p>
+
+              <div class="wizard-options-grid">
+                <div class="wizard-option-card selected" data-value="Ancestral 472-Yr Havelis & Planter Estates" data-tier="1.0">
+                  <div class="option-icon"><i class="fa-solid fa-landmark-dome"></i></div>
+                  <div class="option-title">Ancestral Havelis & Planter Estates</div>
+                  <div class="option-desc">Atmospheric boutique ancestral properties with personal family service.</div>
+                </div>
+
+                <div class="wizard-option-card" data-value="5-Star Grand Palaces & Oberoi/Taj Suites" data-tier="1.35">
+                  <div class="option-icon"><i class="fa-solid fa-gem"></i></div>
+                  <div class="option-title">5-Star Grand Palaces (Oberoi & Taj)</div>
+                  <div class="option-desc">The pinnacle of world luxury: Rambagh Palace, Amarvilas & Lake Palace.</div>
+                </div>
+
+                <div class="wizard-option-card" data-value="Eco-Luxury Riverside & Forest Lodges" data-tier="1.15">
+                  <div class="option-icon"><i class="fa-solid fa-leaf"></i></div>
+                  <div class="option-title">Eco-Luxury Wilderness Retreats</div>
+                  <div class="option-desc">Secluded mountain chalets, riverside Ayurvedic resorts & tented pavilions.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 4: GUEST NUMBERS & TRAVEL MONTH -->
+            <div class="wizard-pane" id="wizardStep4">
+              <h3 class="wizard-pane-title">Who is Traveling and When?</h3>
+              <p class="wizard-pane-desc">Specify group numbers and target seasonal travel window.</p>
+
+              <div style="background: #FFF; padding: 28px; border-radius: var(--radius-md); border: 1px solid rgba(16,46,36,0.08); display: flex; flex-direction: column; gap: 20px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                  <div>
+                    <label style="font-weight: 600; font-size: 0.88rem; color: var(--emerald-deep); display: block; margin-bottom: 6px;">
+                      Number of Adults (12+ yrs)
+                    </label>
+                    <select id="archAdults" class="finder-select" style="width: 100%; padding: 12px;">
+                      <option value="1">1 Adult (Solo Luxury)</option>
+                      <option value="2" selected>2 Adults (Couple)</option>
+                      <option value="4">4 Adults (Family / Friends)</option>
+                      <option value="6">6 Adults (Private Group)</option>
+                      <option value="10">10+ Adults (Executive Delegation)</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label style="font-weight: 600; font-size: 0.88rem; color: var(--emerald-deep); display: block; margin-bottom: 6px;">
+                      Children (Below 12 yrs)
+                    </label>
+                    <select id="archChildren" class="finder-select" style="width: 100%; padding: 12px;">
+                      <option value="0" selected>0 Children</option>
+                      <option value="1">1 Child</option>
+                      <option value="2">2 Children</option>
+                      <option value="3">3+ Children</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                  <div>
+                    <label style="font-weight: 600; font-size: 0.88rem; color: var(--emerald-deep); display: block; margin-bottom: 6px;">
+                      Preferred Month of Travel
+                    </label>
+                    <input type="month" id="archMonth" class="finder-select" style="width: 100%; padding: 11px;">
+                  </div>
+
+                  <div>
+                    <label style="font-weight: 600; font-size: 0.88rem; color: var(--emerald-deep); display: block; margin-bottom: 6px;">
+                      Target Duration (Days)
+                    </label>
+                    <select id="archDuration" class="finder-select" style="width: 100%; padding: 12px;">
+                      <option value="5">5 - 6 Days (Short Break)</option>
+                      <option value="8" selected>7 - 9 Days (Signature Week)</option>
+                      <option value="12">10 - 14 Days (Grand Immersion)</option>
+                      <option value="18">15+ Days (Comprehensive Odyssey)</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 5: BLUEPRINT SUMMARY & SUBMISSION -->
+            <div class="wizard-pane" id="wizardStep5">
+              <h3 class="wizard-pane-title">Your Bespoke Journey Blueprint</h3>
+              <p class="wizard-pane-desc">Review your curated specifications and submit to our senior travel architects.</p>
+
+              <div style="background: rgba(197, 160, 89, 0.08); border: 1px solid var(--accent-gold); border-radius: var(--radius-md); padding: 24px; margin-bottom: 24px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; font-size: 0.92rem;">
+                  <div><strong style="color: var(--emerald-deep);">Destination:</strong> <span id="summaryDest">Royal Rajasthan & Deserts</span></div>
+                  <div><strong style="color: var(--emerald-deep);">Travel Style:</strong> <span id="summaryStyle">Royal Heritage & Palaces</span></div>
+                  <div><strong style="color: var(--emerald-deep);">Stay Standard:</strong> <span id="summaryTier">Ancestral 472-Yr Havelis</span></div>
+                  <div><strong style="color: var(--emerald-deep);">Party & Window:</strong> <span id="summaryParty">2 Adults</span></div>
+                </div>
+              </div>
+
+              <form id="customArchitectForm" style="display: flex; flex-direction: column; gap: 16px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px;">
+                  <div>
+                    <label style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); display: block; margin-bottom: 4px;">Guest Name *</label>
+                    <input type="text" id="archName" required placeholder="Full Name" class="finder-select" style="width: 100%; padding: 10px 12px;">
+                  </div>
+                  <div>
+                    <label style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); display: block; margin-bottom: 4px;">Contact Phone *</label>
+                    <input type="tel" id="archPhone" required placeholder="+91 98200..." class="finder-select" style="width: 100%; padding: 10px 12px;">
+                  </div>
+                  <div>
+                    <label style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); display: block; margin-bottom: 4px;">Email Address *</label>
+                    <input type="email" id="archEmail" required placeholder="name@domain.com" class="finder-select" style="width: 100%; padding: 10px 12px;">
+                  </div>
+                </div>
+
+                <div>
+                  <label style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); display: block; margin-bottom: 4px;">Custom Requests & Personal Interests</label>
+                  <textarea id="archNotes" rows="3" placeholder="Tell us if you have specific cities, dietary needs, flight preferences, or celebrations (anniversary/honeymoon/family milestone)..." class="finder-select" style="width: 100%; padding: 10px 12px; resize: vertical;"></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary" style="padding: 16px; justify-content: center; font-size: 1rem;">
+                  <i class="fa-solid fa-paper-plane"></i> Submit Bespoke Blueprint for Full Itinerary
+                </button>
+              </form>
+            </div>
+
+          </div>
+
+          <!-- Wizard Navigation Buttons -->
+          <div class="wizard-nav-controls" style="display: flex; justify-content: space-between; padding: 24px; border-top: 1px solid rgba(16,46,36,0.08); background: #FAF7F2; border-radius: 0 0 var(--radius-lg) var(--radius-lg);">
+            <button type="button" class="btn-secondary" id="wizardPrevBtn" style="display: none;">
+              <i class="fa-solid fa-arrow-left"></i> Previous Step
+            </button>
+            <div style="flex-grow: 1;"></div>
+            <button type="button" class="btn-primary" id="wizardNextBtn">
+              Next Step <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Right Side: Live Estimate Calculator -->
+        <aside class="architect-summary-col">
+          <div class="sticky-booking-card" style="top: 104px;">
+            <div class="booking-price-header">
+              <span class="booking-price-title">Dynamic Estimated Tariff</span>
+              <div class="booking-price-val" id="archLivePriceDisplay">₹ 2,50,000</div>
+              <div class="booking-per-person" id="archLivePerPerson">Estimated Total for Selected Party</div>
+            </div>
+
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px;">
+              <p><i class="fa-solid fa-check" style="color: #2E7D32;"></i> Includes Chauffeur-driven AC Sedan / SUV</p>
+              <p><i class="fa-solid fa-check" style="color: #2E7D32;"></i> Handpicked Luxury & Heritage Accommodations</p>
+              <p><i class="fa-solid fa-check" style="color: #2E7D32;"></i> Daily Gourmet Breakfasts & Monument Passes</p>
+              <p><i class="fa-solid fa-check" style="color: #2E7D32;"></i> 24/7 Dedicated Mumbai Concierge</p>
+            </div>
+
+            <div style="border-top: 1px solid rgba(16,46,36,0.08); padding-top: 18px; margin-top: 18px;">
+              <div style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; margin-bottom: 6px;">Live Currency:</div>
+              <div style="font-size: 0.85rem; color: var(--emerald-deep); font-weight: 600;">
+                All quotes recalculate automatically with active currency selection in header.
+              </div>
+            </div>
+
+            <a href="https://wa.me/919820012345?text=Namaste%20Indian%20Wonders,%20I%20am%20using%20the%20Bespoke%20Trip%20Architect%20and%20would%20like%20guidance." target="_blank" class="btn-secondary" style="width: 100%; justify-content: center; padding: 12px; margin-top: 20px; border-color: #25D366; color: #128C7E; background: rgba(37, 211, 102, 0.08);">
+              <i class="fa-brands fa-whatsapp" style="font-size: 1.15rem; color: #25D366;"></i> Instant WhatsApp Help
+            </a>
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <div class="footer-brand-title">Indian Wonders</div>
+          <div class="footer-brand-subtitle">Columbus Travels & Services Pvt. Ltd. • Est. 1984</div>
+          <p class="footer-brand-desc">
+            Approved by Dept. of Tourism, Govt. of India. Official IATA Accredited Passenger Sales Agent providing bespoke cultural journeys, royal ancestral haveli homestays, and international cruise expeditions.
+          </p>
+          <div class="iata-official-pill">
+            <i class="fa-solid fa-certificate"></i>
+            <span>Official IATA Accredited Agency (Mumbai)</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Package Categories</h4>
+          <ul class="footer-links-list">
+            <li><a href="packages.html?category=tour">Tour Packages</a></li>
+            <li><a href="packages.html?category=customised">Customised Packages</a></li>
+            <li><a href="packages.html?category=homestay">Home Stay Packages</a></li>
+            <li><a href="packages.html?category=cruise">Cruise Packages</a></li>
+            <li><a href="custom-tour.html">Bespoke Trip Architect</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Specialized Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html">IATA Air Ticketing</a></li>
+            <li><a href="services.html">Luxury Chauffeur Fleet</a></li>
+            <li><a href="services.html">Medical Tourism Concierge</a></li>
+            <li><a href="services.html">Visa & Travel Insurance</a></li>
+            <li><a href="services.html#legacy">Our 1984 Heritage</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Mumbai Headquarters</h4>
+          <div class="office-info-item">
+            <i class="fa-solid fa-building"></i>
+            <span>Columbus Travels & Services Pvt. Ltd.<br>Rajni Kunj, M.G. Road, Kandivali (West),<br>Mumbai - 400067, Maharashtra, India</span>
+          </div>
+          <div class="office-info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>indianwonders@indianwonders.com<br>info@indianwonders.com</span>
+          </div>
+          <div class="office-info-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 22 2808 6789 / 022-28052385</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>© 1984 - 2026 Columbus Travels & Services Pvt. Ltd. / Indian Wonders. All Rights Reserved.</span>
+        <span>Approved by Dept. of Tourism, Govt. of India • IATA Accredited</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Widget -->
+  <a href="https://wa.me/919820012345?text=Namaste%20Indian%20Wonders,%20I%20would%20like%20to%20plan%20a%20custom%20trip." 
+     target="_blank" 
+     class="floating-whatsapp-widget" 
+     aria-label="Contact WhatsApp Concierge">
+    <i class="fa-brands fa-whatsapp" style="font-size: 1.4rem;"></i>
+    <span>WhatsApp Concierge</span>
+  </a>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <i class="fa-solid fa-circle-check"></i>
+    <span>Notification message</span>
+  </div>
+
+  <!-- Core Scripts -->
+  <script src="js/tours-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
