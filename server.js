@@ -6,6 +6,7 @@
 
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
 const cors = require('cors');
 
 const {
@@ -25,18 +26,36 @@ app.use(express.urlencoded({ extended: true }));
 
 // 1. Explicit Core Asset Routes with guaranteed MIME types
 app.get('/css/styles.css', (req, res) => {
-  res.setHeader('Content-Type', 'text/css; charset=utf-8');
-  res.sendFile(path.join(__dirname, 'css', 'styles.css'));
+  try {
+    const cssPath = path.join(__dirname, 'css', 'styles.css');
+    if (fs.existsSync(cssPath)) {
+      res.setHeader('Content-Type', 'text/css; charset=utf-8');
+      return res.sendFile(cssPath);
+    }
+  } catch (e) {}
+  res.status(404).send('CSS not found');
 });
 
 app.get('/js/app.js', (req, res) => {
-  res.setHeader('Content-Type', 'application/javascript; charset=utf-8');
-  res.sendFile(path.join(__dirname, 'js', 'app.js'));
+  try {
+    const jsPath = path.join(__dirname, 'js', 'app.js');
+    if (fs.existsSync(jsPath)) {
+      res.setHeader('Content-Type', 'application/javascript; charset=utf-8');
+      return res.sendFile(jsPath);
+    }
+  } catch (e) {}
+  res.status(404).send('JS not found');
 });
 
 app.get('/js/tours-data.js', (req, res) => {
-  res.setHeader('Content-Type', 'application/javascript; charset=utf-8');
-  res.sendFile(path.join(__dirname, 'js', 'tours-data.js'));
+  try {
+    const dataPath = path.join(__dirname, 'js', 'tours-data.js');
+    if (fs.existsSync(dataPath)) {
+      res.setHeader('Content-Type', 'application/javascript; charset=utf-8');
+      return res.sendFile(dataPath);
+    }
+  } catch (e) {}
+  res.status(404).send('Tours data not found');
 });
 
 // 2. Static directory middleware for assets, css, js

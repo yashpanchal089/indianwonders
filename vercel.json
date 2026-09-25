@@ -3,9 +3,9 @@
   "functions": {
     "server.js": {
       "includeFiles": "{css/**,js/**,assets/**,*.html}"
+    },
+    "index.js": {
+      "includeFiles": "{css/**,js/**,assets/**,*.html}"
     }
-  },
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/server.js" }
-  ]
+  }
 }
